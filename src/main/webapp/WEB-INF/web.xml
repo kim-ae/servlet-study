@@ -1,0 +1,26 @@
+<web-app>
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>br.com.kimae.servlettest.DemoInterfaceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>br.com.kimae.servlettest.DemoInterfaceByeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/bye</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>s3</servlet-name>
+		<servlet-class>br.com.kimae.servlettest.DemoExtendsHttpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s3</servlet-name>
+		<url-pattern>/extends</url-pattern>
+	</servlet-mapping>
+</web-app>
